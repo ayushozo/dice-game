@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Dice Game&lt;/title&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Roll the Dice&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="rollDice()"&gt;Roll the Dice&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function rollDice() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Generate a random number between 1 and 6</p>
+<p class="p1"><span class="Apple-converted-space">            </span>var outcome = Math.floor(Math.random() * 6) + 1;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Create a mapping of dice outcomes to Google Form question URLs</p>
+<p class="p1"><span class="Apple-converted-space">            </span>var questionURLs = {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>1: '<a href="https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit">https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit</a>',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>2: '<a href="https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit">https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit</a>',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>3: '<a href="https://docs.google.com/forms/d/1xwBMmC_9G93YP75rtV8upvR3KM8GB9ogHukkg7jrKg8/edit">https://docs.google.com/forms/d/1xwBMmC_9G93YP75rtV8upvR3KM8GB9ogHukkg7jrKg8/edit</a>',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>4: '<a href="https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit">https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit</a>',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>5: '<a href="https://docs.google.com/forms/d/1xwBMmC_9G93YP75rtV8upvR3KM8GB9ogHukkg7jrKg8/edit">https://docs.google.com/forms/d/1xwBMmC_9G93YP75rtV8upvR3KM8GB9ogHukkg7jrKg8/edit</a>',</p>
+<p class="p1"><span class="Apple-converted-space">                </span>6: '<a href="https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit">https://docs.google.com/forms/d/1kwEBXUGoR5rg01Ta1YOQvEb4CWdlO7C8DjvygL2TwHQ/edit</a>'</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Redirect the user to the corresponding Google Form question</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.open(questionURLs[outcome], '_blank');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
